@@ -2,7 +2,7 @@
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 
 if '%errorlevel%' NEQ '0' (
-  echo Requesting administrative privileges...
+  echo Requesting Administrative Privileges...
   goto UACPrompt
 ) else ( goto gotAdmin )
 
@@ -20,4 +20,5 @@ if '%errorlevel%' NEQ '0' (
   echo 202.92.144.22   rodolfo.uplb.edu.ph >> %windir%\System32\drivers\etc\hosts
   echo 202.92.144.23   dioscoro.uplb.edu.ph >> %windir%\System32\drivers\etc\hosts
   echo 202.92.144.24   eduardo.uplb.edu.ph >> %windir%\System32\drivers\etc\hosts
+  echo Done.
   pause
